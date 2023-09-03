@@ -7,7 +7,6 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "postbuild": "node ./postbuild.mjs -path https://username.example.io/repository-name/",
     "astro": "astro"
   },
   "dependencies": {
