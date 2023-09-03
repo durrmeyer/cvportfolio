@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content';
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-// Component Imports
+
 import CallToAction from '../components/CallToAction.astro';
 import Grid from '../components/Grid.astro';
 import Hero from '../components/Hero.astro';
@@ -90,7 +90,7 @@ const projects = (await getCollection('work'))
         </div>
 
         <div class="cta">
-          <CallToAction href="./work/">
+          <CallToAction href="/work/">
             Tous les projects
             <Icon
               icon="arrow-right"
