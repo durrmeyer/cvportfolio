@@ -2,6 +2,6 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://durrmeyer.github.io/'',
+  site: 'https://durrmeyer.github.io/',
  
 });
