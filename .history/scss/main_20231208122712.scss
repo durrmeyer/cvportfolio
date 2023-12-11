@@ -1,0 +1,25 @@
+$web_width: 1280px;
+$primary_color: #7dff31;
+$light_color: #f4f4f4;
+$dark_color: #0c0e0c;
+$main_bg: url('');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+a{
+  text-decoration: none;
+  color: $primary_color;
+}
+ul{ list-style-type: none;}
+h1, h2, h3, h4{ font-weight: 700; text-transform: uppercase;}
+.btn{
+  padding: 10px 20px;
+  background-color: $primary_color;
+  border-radius: 5px;
+}

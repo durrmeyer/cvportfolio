@@ -1,0 +1,75 @@
+$web_width: 1280px;
+$primary_color: #7dff31;
+$light_color: #ffffff;
+$dark_color: #0c0e0c;
+$color: #fff;
+$main_bg: url('');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: $primary_color;
+}
+ul {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+%btn_prop_shared {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.7s;
+}
+.main_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $dark_color;
+  padding: 0.5rem 1rem;
+
+  ul {
+    display: flex;
+  }
+  li {
+    padding: 1rem 1.5rem;
+    color: $color;
+  }
+  a {
+    padding-bottom: 0.3rem;
+    border-bottom: 2px transparent solid;
+    transition: border-color 1s;
+  }
+  .logo_title {
+    text-transform: none;
+    color: $color;
+  }
+  &:hover {
+    border-color: $primary_color;
+  }
+  &.current_page {
+    border-color: $primary_color;
+  }
+}
+.header{
+  background: rgb(205, 218, 215);
+  height: 93.4vh;
+}
+.header_content{
+display: flex;
+flex-direction: column;
+}

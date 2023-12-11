@@ -1,0 +1,18 @@
+$web_width: 1280px;
+$primary_color: #7dff31;
+$light_color: #f4f4f4;
+$dark_color: #0c0e0c;
+$main_bg: url('');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+}
+a{
+  text-decoration: none;
+  color: $primary_color;
+}

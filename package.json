@@ -1,0 +1,14 @@
+{
+  "name": "cvportfolio",
+  "version": "1.0.0",
+  "description": "Portfolio en html et scss",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Marie Velia",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

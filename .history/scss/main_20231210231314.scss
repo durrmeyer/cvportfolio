@@ -1,0 +1,156 @@
+$web_width: 1280px;
+$primary_color: #7dff31;
+$light_color: #ffffff;
+$dark_color: #00819d;
+$color: #fff;
+$main_bg: url('/dist/img/tmp.png');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.text_center {
+  text-align: center;
+}
+.section_title {
+  font-size: 2.2rem;
+  padding-bottom: 0.5rem;
+}
+.section_text {
+  font-size: center 1.2rem;
+}
+.ptb {
+  &_0 {
+    padding: 5rem;
+  }
+  &_1 {
+    padding: 4rem;
+  }
+  &_2 {
+    padding: 3rem;
+  }
+  &_3 {
+    padding: 2rem;
+  }
+  &_4 {
+    padding: 1rem;
+  }
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: $primary_color;
+}
+ul {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+%btn_prop_shared {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.2s;
+}
+// NAVIGATION
+.main_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $dark_color;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  :hover {
+    border-color: $color;
+  }
+  .current_page {
+    border-color: $color;
+  }
+  .logo_title {
+    font-family: Pacifico cursive;
+    font-size: 1.6rem;
+    text-transform: none;
+    color: $color;
+  }
+  ul {
+    display: flex;
+    li {
+      padding: 1rem 1.5rem;
+      color: $color;
+
+      a {
+        padding-bottom: 0.3rem;
+        border-bottom: 2px transparent solid;
+        transition: border-color 1s;
+      }
+    }
+  }
+}
+// HEADER
+.header {
+  margin-top: 85px;
+  margin-bottom: -20px;
+  background: $main_bg no-repeat center center/cover;
+  height: 90.4vh;
+  .header_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .btn_cta {
+      margin-top: 500px;
+      margin-right: 950px;
+      @extend %btn_prop_shared;
+      color: $color;
+      background-color: $dark_color;
+      &:hover {
+        color: $color;
+        background-color: black;
+      }
+    }
+  }
+}
+// SECTION PROJET
+.section_project {
+  .container {
+    max-width: $web_width;
+    margin: auto;
+    overflow: hidden;
+    .project {
+      margin-top: 3rem;
+      background-color: #00809d42;
+      display: flex;
+      row-gap: 2rem;
+      column-gap: 4rem;
+      div {
+        margin: 0 0.5rem;
+      }
+      .fas {
+        color: #811e7a;
+        background-color: $dark_color;
+        margin-top: 2rem;
+        padding: 0.7rem 1rem;
+        margin-bottom: 0.7rem;
+        border-radius: 50%;
+      }
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.9rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #7dff31;
+}/*# sourceMappingURL=main_20231208112028.css.map */
