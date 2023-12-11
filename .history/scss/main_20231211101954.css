@@ -17,6 +17,22 @@
   font-size: center 1.2rem;
 }
 
+.ptb_0 {
+  padding: 5rem;
+}
+.ptb_1 {
+  padding: 4rem;
+}
+.ptb_2 {
+  padding: 3rem;
+}
+.ptb_3 {
+  padding: 2rem;
+}
+.ptb_4 {
+  padding: 1rem;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -24,7 +40,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #11140f;
+  color: #7dff31;
 }
 
 ul {
@@ -40,7 +56,7 @@ h4 {
 }
 
 .container {
-  max-width: 1680px;
+  max-width: 1380px;
   margin: auto;
   overflow: hidden;
 }
@@ -67,14 +83,14 @@ h4 {
   font-family: Pacifico cursive;
   font-size: 1.6rem;
   text-transform: none;
-  color: #ffffff;
+  color: #fff;
 }
 .main_nav ul {
   display: flex;
 }
 .main_nav ul li {
   padding: 1rem 1.5rem;
-  color: #ffffff;
+  color: #fff;
 }
 .main_nav ul li a {
   padding-bottom: 0.3rem;
@@ -84,10 +100,10 @@ h4 {
 
 .header {
   margin-top: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 85px;
   background: url("/dist/img/tmp.png") no-repeat center center/cover;
   height: 96.8vh;
-  width: 100%;
+  max-width: 100%;
 }
 .header .header_content {
   display: flex;
@@ -99,43 +115,49 @@ h4 {
 .header .header_content .btn_cta {
   margin-top: 500px;
   margin-right: 950px;
-  color: #ffffff;
+  color: #fff;
   background-color: #00819d;
 }
 .header .header_content .btn_cta:hover {
-  color: #ffffff;
+  color: #fff;
   background-color: black;
 }
 
-.container .item {
-  display: flex;
-}
-.container .item img {
-  height: 70%;
-}
-
-.section_project .project_item {
+.about .container .item {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 125px;
+}
+.about .container .item img {
+  width: 250px;
+  height: auto;
+  margin-right: 205px;
 }
 
-@media screen and (max-width: 1300px) {
-  .header {
-    margin-left: 15px;
-    background: url("/dist/img/mob.png") no-repeat center center/cover;
-  }
+.section_title {
+  display: flex;
+  align-items: center;
 }
-@media screen and (max-width: 950px) {
-  .header {
-    margin-top: 0px;
-    margin-left: 15px;
-    background: url("/dist/img/mob.png") no-repeat center center/cover;
+
+/*.container_project {
+  .projet{
+    margin-top: 3rem;
+    display: flex;
+    row-gap: 2rem;
+    column-gap: 4rem;
+
+    .fas {
+      color: #f8f5f8;
+      background-color: $dark_color;
+      margin-top: 2rem;
+      padding: 0.7rem 1rem;
+      margin-bottom: 0.7rem;
+      border-radius: 50%;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.7rem;
+    }
   }
-}
-@media screen and (max-width: 550px) {
-  .header {
-    margin-top: 0px;
-    margin-left: 0px;
-    background: url("/dist/img/mob.png") no-repeat center/cover;
-  }
-}/*# sourceMappingURL=main.css.map */
+  }*//*# sourceMappingURL=main_20231211101954.css.map */

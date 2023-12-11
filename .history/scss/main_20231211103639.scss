@@ -1,11 +1,9 @@
-$web_width: 1680px;
-
-$primary_color: #11140f;
-$color: #ffffff;
+$web_width: 1380px;
+$primary_color: #7dff31;
+$light_color: #ffffff;
 $dark_color: #00819d;
-$light_color: #fdfcfc;
+$color: #fff;
 $main_bg: url('/dist/img/tmp.png');
-$mobile_bg: url('/dist/img/mob.png');
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +19,23 @@ $mobile_bg: url('/dist/img/mob.png');
 .section_text {
   font-size: center 1.2rem;
 }
-
+.ptb {
+  &_0 {
+    padding: 5rem;
+  }
+  &_1 {
+    padding: 4rem;
+  }
+  &_2 {
+    padding: 3rem;
+  }
+  &_3 {
+    padding: 2rem;
+  }
+  &_4 {
+    padding: 1rem;
+  }
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -85,12 +99,11 @@ h4 {
 }
 // HEADER
 .header {
- margin-top: 20px;
-  margin-bottom:0px;
+  margin-top: 20px;
+  margin-bottom: 85px;
   background: $main_bg no-repeat center center/cover;
   height: 96.8vh;
-  width: 100%;
-
+  max-width: 100%;
   .header_content {
     display: flex;
     flex-direction: column;
@@ -112,40 +125,46 @@ h4 {
   }
 }
 // SECTION ABOUT
-.container {
-  .item {
-    display: flex;
-    img {
-      height: 70%;
+/*.about {
+  .container {
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 125px;
+      img {
+        width: 250px;
+        height: auto;
+        margin-right: 205px;
+      }
     }
   }
-}
+}*/
 // SECTION PROJET
-.section_project {
-  .project_item {
+.section_title{
+  display: flex;
+  align-items: center;
+}
+/*.container_project {
+  .projet{
+    margin-top: 3rem;
     display: flex;
-    justify-content: center;
+    row-gap: 2rem;
+    column-gap: 4rem;
+
+    .fas {
+      color: #f8f5f8;
+      background-color: $dark_color;
+      margin-top: 2rem;
+      padding: 0.7rem 1rem;
+      margin-bottom: 0.7rem;
+      border-radius: 50%;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.7rem;
+    }
   }
-}
-@media screen and (max-width: 1300px) {
-  .header {
+  }*/
    
-    margin-left: 15px;
-    background: $mobile_bg no-repeat center center/cover;
-  }
-}
-@media screen and (max-width: 950px) {
-  .header {
-    margin-top: 0px;
-    margin-left: 15px;
-    background: $mobile_bg no-repeat center center/cover;
-  }
-}
-@media screen and (max-width: 550px) {
-  .header {
-    margin-top: 0px;
-    margin-left: 0px;
-    background: $mobile_bg no-repeat  center/cover;
-    
-  }
-}
+

@@ -10,6 +10,7 @@ $mobile_bg: url('/dist/img/mob.png');
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 .text_center {
   text-align: center;
@@ -21,6 +22,7 @@ $mobile_bg: url('/dist/img/mob.png');
 .section_text {
   font-size: center 1.2rem;
 }
+
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -85,12 +87,12 @@ h4 {
 }
 // HEADER
 .header {
- margin-top: 20px;
-  margin-bottom:0px;
+  margin-top: 20px;
+  margin-bottom: 85px;
   background: $main_bg no-repeat center center/cover;
   height: 96.8vh;
   width: 100%;
-
+ 
   .header_content {
     display: flex;
     flex-direction: column;
@@ -112,40 +114,36 @@ h4 {
   }
 }
 // SECTION ABOUT
-.container {
-  .item {
+.container{
+  .item{
     display: flex;
-    img {
+    img{
       height: 70%;
     }
   }
 }
 // SECTION PROJET
-.section_project {
-  .project_item {
+.section_project{
+  .project_item{
     display: flex;
     justify-content: center;
   }
 }
-@media screen and (max-width: 1300px) {
-  .header {
+
+@media screen and (max-width:950px) {
+  .header{
    
-    margin-left: 15px;
     background: $mobile_bg no-repeat center center/cover;
+   
   }
-}
-@media screen and (max-width: 950px) {
-  .header {
-    margin-top: 0px;
-    margin-left: 15px;
-    background: $mobile_bg no-repeat center center/cover;
-  }
-}
-@media screen and (max-width: 550px) {
-  .header {
-    margin-top: 0px;
-    margin-left: 0px;
-    background: $mobile_bg no-repeat  center/cover;
+  
+} 
+  @media screen and (max-width:750px) {
+    .header{
+     margin: 0;
+      background: $mobile_bg no-repeat center center/cover;
+ 
+    }
     
-  }
-}
+  } 
+

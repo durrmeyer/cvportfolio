@@ -85,7 +85,7 @@ h4 {
 }
 // HEADER
 .header {
- margin-top: 20px;
+  margin-top: -98px;
   margin-bottom:0px;
   background: $main_bg no-repeat center center/cover;
   height: 96.8vh;
@@ -127,13 +127,7 @@ h4 {
     justify-content: center;
   }
 }
-@media screen and (max-width: 1300px) {
-  .header {
-   
-    margin-left: 15px;
-    background: $mobile_bg no-repeat center center/cover;
-  }
-}
+
 @media screen and (max-width: 950px) {
   .header {
     margin-top: 0px;
@@ -143,8 +137,7 @@ h4 {
 }
 @media screen and (max-width: 550px) {
   .header {
-    margin-top: 0px;
-    margin-left: 0px;
+   
     background: $mobile_bg no-repeat  center/cover;
     
   }
